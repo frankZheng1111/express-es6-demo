@@ -3,9 +3,9 @@ import Express from 'express';
 let app = Express();
 
 app.get('/', (req, res) => {
-  res.send(`hello world!`);
+  res.send(`Hello world!`);
 });
 
-app.listen(4321, () => {
+app.listen(3000, () => {
   console.log('server running http://localhost:4321');
 });
