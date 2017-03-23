@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-register",
     "server": "node build/index.js",
     "start": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d build"
@@ -23,13 +23,19 @@
     "babel-cli": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
     "express": "^4.15.2"
   },
   "babel": {
-    "presets": ["es2015", "stage-2"],
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
     "plugins": []
   }
 }
