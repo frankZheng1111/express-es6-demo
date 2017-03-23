@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d build --presets es2015,stage-2",
     "server": "node build/index.js",
-    "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2"
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d build"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   },
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-2"],
+    "plugins": []
   }
 }
