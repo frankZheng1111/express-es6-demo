@@ -15,18 +15,18 @@
   ```
 ### 运行
 
-在项目根目录下
-  - 开发环境
-  ```
-  npm start
-  ```
-  - 产品环境
-  ```
-  npm run build
-  npm run server
-  ```
+1. 在项目根目录下
+    - 开发环境
+    ```
+    npm start
+    ```
+    - 产品环境
+    ```
+    npm run build
+    npm run server
+    ```
 
-访问地址[localhost:3000](http://localhost:3000)
+2. 访问地址[localhost:3000](http://localhost:3000)
 
 ### 单元测试
   在项目根目录下
