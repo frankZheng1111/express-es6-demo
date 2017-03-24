@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha --compilers js:babel-register --recursive",
     "server": "node build/index.js",
     "start": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d build"
