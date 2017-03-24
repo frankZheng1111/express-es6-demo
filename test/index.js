@@ -1,5 +1,4 @@
 import http from 'http';
-import assert from 'mocha';
 import { should as _should } from 'chai'
 
 let should = _should();
